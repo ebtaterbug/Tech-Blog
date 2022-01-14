@@ -38,6 +38,8 @@ main {
   width: 94%;
 }
 
+
+
 a {
   text-decoration: none;
   color: var(--primary);
@@ -160,6 +162,10 @@ footer {
   box-shadow: 6px 5px var(--light-dark);
 }
 
+ol {
+  list-style-type: none;
+}
+
 .list-group {
   padding: 0;
   list-style: none;
@@ -199,9 +205,12 @@ footer {
   margin: 0 0 20px 0;
   border: 3px solid var(--dark);
   border-radius: var(--border-radius);
+  width: 100%;
 }
 
 .card-header {
+  display: flex;
+  justify-content: space-between;
   color: var(--primary);
   background-color: var(--dark);
   padding: 1%;
