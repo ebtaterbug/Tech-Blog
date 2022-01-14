@@ -1,5 +1,5 @@
 :root {
-  --primary: #ccdad1;
+  --primary: #D5F5E3;
   --secondary: #9caea9;
   --tertiary: #788585;
   --light-dark: #6f6866;
@@ -34,7 +34,7 @@ h6 {
 }
 
 main {
-  margin: 20px auto;
+  margin: 20px auto 500px auto;
   width: 94%;
 }
 
@@ -43,6 +43,19 @@ a {
   color: var(--primary);
   font-weight: bold;
   transition: color .1s;
+  margin: 20px 35px 15px 0px;
+  font-size: 20px;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: bold;
   margin: 20px 35px 15px 0px;
 }
 
@@ -69,18 +82,15 @@ p {
 .btn2 {
   font-size: 1.3rem;
   text-decoration:none;
-  padding: 6px 6px;
-  padding-right: 7px;
+  padding: 6px 5px;
+  padding-right: 8px;
   width: 100%;
+  margin: 0;
   display: block;
-  margin: 5px 0;
-  border-radius: var(--border-radius);
   color: var(--primary);
   border: none;
   outline: none;
-  background-color: black;
-  box-shadow: 3px 3px var(--primary);
-  transform: translate(-1px, -1px);
+  background-color: var(--dark);
 }
 
  .btn:hover {
@@ -136,12 +146,8 @@ p {
 }
 
 footer {
-  position: fixed;
-  left: 45%;
-  bottom: 0;
-  width: 120px;
-  text-align: center;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .app-title {
@@ -189,6 +195,7 @@ footer {
 
 /* CARDS */
 .card {
+  width: fit-content;
   margin: 0 0 20px 0;
   border: 3px solid var(--dark);
   border-radius: var(--border-radius);
@@ -197,8 +204,9 @@ footer {
 .card-header {
   color: var(--primary);
   background-color: var(--dark);
-  padding: 2.5%;
+  padding: 1%;
   border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
+  margin: 0;
 }
 
 .card-body {
