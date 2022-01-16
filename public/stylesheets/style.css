@@ -38,15 +38,21 @@ main {
   width: 94%;
 }
 
+.login-link {
+  text-decoration: none;
+}
 
-
-a {
+.nav {
   text-decoration: none;
   color: var(--primary);
   font-weight: bold;
   transition: color .1s;
   margin: 20px 35px 15px 0px;
   font-size: 20px;
+}
+
+.nav:hover {
+  color: var(--tertiary);
 }
 
 .btn-no-style {
@@ -63,6 +69,11 @@ a {
 
 p {
   font-size: 1.2rem;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
  .btn {
@@ -73,11 +84,10 @@ p {
   display: block;
   margin: 5px 0;
   border-radius: var(--border-radius);
-  color: var(--primary);
+  color: white;
   border: none;
   outline: none;
   background-color: var(--light-dark);
-  box-shadow: 3px 3px var(--dark);
   transform: translate(-1px, -1px);
 }
 
@@ -89,7 +99,7 @@ p {
   width: 100%;
   margin: 0;
   display: block;
-  color: var(--primary);
+  color: white;
   border: none;
   outline: none;
   background-color: var(--dark);
@@ -214,7 +224,6 @@ ol {
   color: var(--primary);
   background-color: var(--dark);
   padding: 1%;
-  border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
   margin: 0;
 }
 
@@ -236,7 +245,7 @@ ol {
 
 .form-input {
   width: 100%;
-  padding: 3%;
+  padding: 1%;
   margin: 5px 0;
   font-size: 1.2rem;
   border: 2px solid var(--light-dark);

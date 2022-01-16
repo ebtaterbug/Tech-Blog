@@ -1,12 +1,7 @@
 <article class="post card">
       <div class="title card-header">
-        <p>{{title}}</p>
+        <p><a class="link nav" href="/post/{{id}}">{{title}}</a></p>
         <p>Posted by {{user.username}} on {{format_date created_at}}</p>
       </div>
-      <div class="card-body">
-          <span>{{post_url}}</span>
-      </div>
-      <!--<div class="meta">
-         <a class="card-header" href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a> 
-      </div> -->
+      <p class="card-body">{{post_url}}</p>
 </article>
