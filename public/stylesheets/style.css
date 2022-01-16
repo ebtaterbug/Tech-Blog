@@ -42,6 +42,11 @@ main {
   text-decoration: none;
 }
 
+.new-post {
+  color: white;
+  text-decoration: none;
+}
+
 .nav {
   text-decoration: none;
   color: var(--primary);
@@ -51,7 +56,8 @@ main {
   font-size: 20px;
 }
 
-.nav:hover {
+.nav:hover,
+.btn-no-style:hover {
   color: var(--tertiary);
 }
 

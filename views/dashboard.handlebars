@@ -1,12 +1,18 @@
 <section>
   {{#if posts.length}}
-      {{#each posts as |post|}}
+      {{#each posts}}
       <li>
-        {{> post-info post}}
+        <article class="post card">
+          <div class="title card-header">
+            <p><a class="link nav" href="/post/{{id}}">{{title}}</a></p>
+            <p>Posted by {{user.username}} on {{format_date created_at}}</p>
+          </div>
+        </article>
       </li>
       {{/each}}
   {{/if}}
-  <button type="submit" class="btn">+ New Post</button>
+  <button type="submit" class="btn" id="new-post">+ New Post</a></button>
 </section>
 
 <script src="/javascript/add-post.js"></script>
+<script src="/javascript/new-post.js"></script>
